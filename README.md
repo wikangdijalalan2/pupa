@@ -13,7 +13,6 @@ To use the latest stable version run:
 ```sh-session
 $ heroku buildpacks:add jontewks/puppeteer
 ```
-
 Or use the source code in this repository:
 
 ```sh-session
